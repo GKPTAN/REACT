@@ -1,4 +1,6 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import Produtos from './components/Produtos';
 
 function MyButton() {
   return (
@@ -34,6 +36,8 @@ function App() {
         Idade: {user.idade}
       </p>
       <MyButton />
+      <HelloWorld />
+      <Produtos />
     </div>
   );
 }
