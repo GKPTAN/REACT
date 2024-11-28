@@ -4,7 +4,7 @@ const objetos = [
     { titulo: 'Headphone', obtido: true, id: 3 },
 ];
 
-function Produtos() {
+function Produtos(props) {
     const listaDeItens = objetos.map(objeto => 
         <li 
             key={objeto.id}
@@ -18,7 +18,7 @@ function Produtos() {
 
     return (
         <div>
-            <h2>Produtos obtidos</h2>
+            <h2>Produtos obtidos por {props.nome}</h2>
             <ul>{listaDeItens}</ul>
         </div>
     )
