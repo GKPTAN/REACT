@@ -1,9 +1,7 @@
 import './App.css';
-import Produtos from './components/Produtos';
-import Pessoa from './components/Pessoa';
-import Frase from './components/Frase';
 import {useState} from 'react';
-import List from './components/List';
+import Evento from './components/Evento';
+import Form from './components/Form';
 
 function App() {
 
@@ -15,19 +13,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Testando CSS</h1>
-      <Frase />
-      <Frase />
+      <h1>Testando Eventos</h1>
       <MyButton count={count} onClick={handleClick}/>
       <MyButton count={count} onClick={handleClick}/>
-      <Produtos nome="Guilherme"/>
-      <Pessoa 
-        foto="https://via.placeholder.com/150"
-        nome="Guilherme"
-        idade={23}
-        profissao="Programador"
-      />
-      <List />
+      <Evento numero="1"/>
+      <Evento numero="2"/>
+      <Form />
     </div>
   );
 }
