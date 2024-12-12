@@ -16,8 +16,7 @@ function App() {
       <h1>Testando Eventos</h1>
       <MyButton count={count} onClick={handleClick}/>
       <MyButton count={count} onClick={handleClick}/>
-      <Evento numero="1"/>
-      <Evento numero="2"/>
+      <Evento />
       <Form />
     </div>
   );
