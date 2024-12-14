@@ -1,7 +1,6 @@
 import './App.css';
 import {useState} from 'react';
-import Evento from './components/Evento';
-import Form from './components/Form';
+import Condicional from './components/Condicional';
 
 function App() {
 
@@ -13,11 +12,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Testando Eventos</h1>
+      <h1>Renderização Condicional</h1>
       <MyButton count={count} onClick={handleClick}/>
       <MyButton count={count} onClick={handleClick}/>
-      <Evento />
-      <Form />
+      <Condicional />
     </div>
   );
 }
