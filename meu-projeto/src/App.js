@@ -1,10 +1,11 @@
 import './App.css';
 import {useState} from 'react';
-import SegundaLista from './components/SegundaLista';
+import SeuNome from './components/SeuNome';
+import Saudacao from './components/Saudacao';
 
 function App() {
 
-  const meusItens = ['React', 'Vue', 'Angular'];
+  const [nome, setNome] = useState();
 
   const [count, setCount] = useState(0);
 
@@ -14,11 +15,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Renderização de listas</h1>
+      <h1>State Lift</h1>
       <MyButton count={count} onClick={handleClick}/>
       <MyButton count={count} onClick={handleClick}/>
-      <SegundaLista itens={meusItens} />
-      <SegundaLista itens={[]} />
+      <SeuNome setNome={setNome}/>
+      <Saudacao nome={nome} />
     </div>
   );
 }
