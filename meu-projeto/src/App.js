@@ -1,8 +1,10 @@
 import './App.css';
 import {useState} from 'react';
-import Condicional from './components/Condicional';
+import SegundaLista from './components/SegundaLista';
 
 function App() {
+
+  const meusItens = ['React', 'Vue', 'Angular'];
 
   const [count, setCount] = useState(0);
 
@@ -12,10 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
+      <h1>Renderização de listas</h1>
       <MyButton count={count} onClick={handleClick}/>
       <MyButton count={count} onClick={handleClick}/>
-      <Condicional />
+      <SegundaLista itens={meusItens} />
+      <SegundaLista itens={[]} />
     </div>
   );
 }
