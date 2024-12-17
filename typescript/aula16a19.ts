@@ -1,15 +1,16 @@
 class Computador{
+    private id:number;
     nome:string="Computador1";
-    ram:number=0;
-    cpu:number=0;
-    ligado:boolean;
+    private ram:number=0;
+    private cpu:number=0;
+    protected ligado:boolean;
 
     constructor(nome:string, ram:number, cpu:number) {
         this.nome=nome;
         this.ram=ram;
         this.cpu=cpu;
         this.ligado=false;
-        console.log("Novo computador criado");
+        this.id=0;
     };
 
     info():void{
@@ -27,6 +28,14 @@ class Computador{
     desligar():void{
         this.ligado=false;
     };
+
+    upRam(qtde:number):void {
+        if(qtde >= 0 && qtde <= 1000) {
+            this.ram=qtde;
+        } else {
+            console.log(`Quantidade ${qtde} para o computador ${this.nome} não é permitido para a memória ram`);
+        };
+    };
 };
 
 //instanciar
@@ -36,6 +45,8 @@ const comp3 = new Computador("Gamer", 128, 10);
 
 comp1.ligar();
 comp2.ligar();
+
+comp1.upRam(-100);
 
 comp1.info();
 comp2.info();
