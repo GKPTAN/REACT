@@ -21,9 +21,17 @@ class Conta{
         return this.saldoConta;
     };
     protected deposito(valor:number){
+        if(valor < 0){
+            console.log("Valor inválido");
+            return;
+        };
         this.saldoConta+=valor;
     };
     protected saque(valor:number){
+        if(valor < 0){
+            console.log("Valor inválido");
+            return;
+        };
         if(valor <= this.saldoConta) {
             this.saldoConta-=valor;
         } else {
@@ -51,6 +59,13 @@ class ContaPF extends Conta{
             super.deposito(valor);
         };
     };
+    saque(valor:number){
+        if(valor>1000) {
+            console.log('Valor de saque muito grande para esse tipo de conta');
+        } else {
+            super.saque(valor);
+        };
+    };
 };
 
 class ContaPJ extends Conta{
@@ -72,6 +87,13 @@ class ContaPJ extends Conta{
             super.deposito(valor);
         };
     };
+    saque(valor:number){
+        if(valor>10000) {
+            console.log('Valor de saque muito grande para esse tipo de conta');
+        } else {
+            super.saque(valor);
+        };
+    };
 };
 
 const cont1=new ContaPF(12375326728, "Gui");
@@ -79,6 +101,7 @@ const cont2=new ContaPJ(37653485683, "André");
 //cont1.info();
 //cont2.info();
 cont1.deposito(800);
+cont1.deposito(200);
+cont1.deposito(1000);
+cont1.saque(100);
 console.log(cont1.saldo());
-cont2.deposito(10000);
-console.log(cont2.saldo());
