@@ -1,8 +1,8 @@
-class Conta{
+abstract class Conta{
     //Public: acessado de qualquer lugar.
     //Private: acessado somente na sua própria classe.
     //Protected: acessado somente na sua própria classe e nas classes filho.
-    protected numero:number;
+    private readonly numero:number;
     protected titular:string;
     private saldoConta:number;
     constructor(titular:string){
