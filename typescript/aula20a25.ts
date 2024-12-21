@@ -17,8 +17,11 @@ class Conta{
         console.log(`Titular: ${this.titular}`);
         console.log(`Numero: ${this.numero}`);
     };
-    public saldo():number{
+    get saldo():number{ //getter
         return this.saldoConta;
+    };
+    set saldo(saldoConta:number){ //setter
+        this.saldoConta=saldoConta;
     };
     protected deposito(valor:number){
         if(valor < 0){
@@ -103,5 +106,6 @@ const cont2=new ContaPJ(37653485683, "André");
 cont1.deposito(800);
 cont1.deposito(200);
 cont1.deposito(1000);
-cont1.saque(100);
-console.log(cont1.saldo());
+//cont1.saque(100);
+cont1.saldo=250;
+console.log(cont1.saldo);
