@@ -1,4 +1,4 @@
-import { Pessoa, Objeto } from "./src/Classes";
+import Pessoa, { Objeto, Coisas } from "./src/Classes";
 
 const p1 = new Pessoa('Guilherme', 171);
 const p2 = new Objeto('caixa');
