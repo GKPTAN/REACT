@@ -35,8 +35,8 @@
     },
     {
       "id": "ba38",
-      "name": "Loja de livros virtual",
-      "budget": "30000",
+      "name": "Livraria virtual",
+      "budget": "45000",
       "category": {
         "id": "4",
         "name": "Planejamento"
