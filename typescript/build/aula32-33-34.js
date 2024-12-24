@@ -49,7 +49,7 @@ var Veiculos;
     ;
     class CarroEsportivo extends Carro {
         constructor(nome, cor) {
-            super(nome, new Motores.Motor(6, 300, new Motores.Turbo(100)), 2);
+            super(nome, new Motores.Motor(300, 6, new Motores.Turbo(100)), 2);
         }
         ;
     }
@@ -57,7 +57,7 @@ var Veiculos;
     ;
     class CarroPopular extends Carro {
         constructor(nome, cor) {
-            super(nome, new Motores.Motor(3, 100), 2);
+            super(nome, new Motores.Motor(100, 3), 0);
         }
         ;
     }
@@ -85,9 +85,9 @@ var Motores;
         cilindros;
         pot;
         constructor(pot, cilindros, turbo) {
-            this.pot = pot + (turbo ? turbo.potencia : 0);
             this.ligado = false;
             this.cilindros = cilindros;
+            this.pot = pot + (turbo ? turbo.potencia : 0);
         }
         ;
         set liga(ligado) {
@@ -109,6 +109,8 @@ var Motores;
 ;
 const carro1 = new Veiculos.CarroEsportivo("Venturator", 2);
 const carro2 = new Veiculos.CarroPopular("Morza", 0);
+carro1.ligar();
+carro2.ligar();
 console.log(`Nome....: ${carro1.meuNome}`);
 console.log(`Cor.....: ${carro1.minhaCor}`);
 console.log(`Potência: ${carro1.minhaPotencia}`);
