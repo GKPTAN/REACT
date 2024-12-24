@@ -1,30 +1,8 @@
 {
   "projects": [
     {
-      "id": "64b0",
-      "name": "shoes store",
-      "budget": "15000",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "ceea",
-      "name": "Tecno cell",
-      "budget": "25000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "4f5c",
-      "name": "Site loja online",
+      "name": "loja de calçados",
       "budget": "3000",
       "category": {
         "id": "3",
