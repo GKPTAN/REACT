@@ -12,13 +12,13 @@
       "services": []
     },
     {
-      "id": "ba38",
-      "name": "Livraria virtual",
-      "budget": "45000",
+      "id": "fdd2",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "1",
+        "name": "infra"
       },
+      "name": "supermercado",
+      "budget": "110000",
       "cost": 0,
       "services": []
     }

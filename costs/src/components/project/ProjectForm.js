@@ -19,9 +19,18 @@ function ProjectForm({handleSubmit, btnText, projectData}) {
         .then((resp) => resp.json())
         .then((data) => {
             setCategories(data);
+            if(!project.category) {
+                setProject({
+                    ...project,
+                    category: {
+                        id: data[0]?.id,
+                        name: data[0]?.name,
+                    },
+                });
+            };
         })
         .catch(err => console.log(err));
-    }, []);
+    }, [project]);
 
     const submit = (e) => {
         e.preventDefault();
