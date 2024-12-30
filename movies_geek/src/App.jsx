@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <h2>movies_geek</h2>
       <Outlet />
     </>
   )
