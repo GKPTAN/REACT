@@ -48,3 +48,26 @@
     background-color: transparent;
     color: #f7d354;
 }
+@media (max-width: 550px) {
+    .movies-container div{
+        width: 45%;
+    }
+    .movies-container div h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .movies-container div a{
+        padding: 0.5rem;
+    }
+}
+@media (max-width: 375px) {
+    .container .title{
+        font-size: 2rem;
+    }
+    .movies-container{
+        padding: 2rem 1rem;
+    }
+    .movies-container div{
+        width: 47%;
+    }
+}

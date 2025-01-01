@@ -35,3 +35,15 @@
     background-color: transparent;
     color: #f7d354;
 }
+@media (max-width: 550px) {
+    #navbar{
+        padding: 1rem 0.5rem;
+    }
+    #navbar input{
+        padding: 0.2rem 0.4rem;
+        width: 60%;
+    }
+    #navbar form{
+        justify-content: end;
+    }
+}
