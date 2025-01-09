@@ -1,0 +1,12 @@
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 6rem 0;
+    gap: 0.8rem;
+}
+.rodape a{
+    text-align: center;
+}
