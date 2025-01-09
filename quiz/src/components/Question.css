@@ -1,5 +1,5 @@
 #question{
-    width: 500px;
+    max-width: 500px;
     background-color: #8435de;
     border-radius: 1rem;
     padding: 2rem;
@@ -13,4 +13,15 @@
 #question button{
     border: 2px solid #fff;
     margin: 1rem;
+}
+@media (max-width: 600px) {
+    #question{
+        max-width: 300px;
+        padding: 1rem;
+    }
+}
+@media (max-width: 375px) {
+    #question{
+        max-width: 250px;
+    }
 }

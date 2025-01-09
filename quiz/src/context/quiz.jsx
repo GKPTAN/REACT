@@ -32,8 +32,6 @@ const quizReducer = (state, action) => {
                 };
             });
 
-            console.log("Perguntas filtradas: ", quizQuestions);
-
             return {
                 ...state,
                 questions: quizQuestions,
