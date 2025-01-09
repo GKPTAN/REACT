@@ -21,6 +21,10 @@
     background-color: #471c5f;
     opacity: 0.4;
 }
+.clicked.wrong{
+    background-color: darkred;
+    opacity: 1;
+}
 .hide{
     display: none;
 }

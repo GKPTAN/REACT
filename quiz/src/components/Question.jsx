@@ -8,8 +8,6 @@ const Question = () => {
     const [quizState, dispatch] = useContext(QuizContext);
     const currentQuestion = quizState.questions[quizState.currentQuestion];
 
-    console.log(quizState.questions[quizState.currentQuestion]);
-
     const onSelectOption = (option) => {
       dispatch({
         type: "CHECK_ANSWER",

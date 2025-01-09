@@ -32,6 +32,8 @@ const quizReducer = (state, action) => {
                 };
             });
 
+            console.log("Perguntas filtradas: ", quizQuestions);
+
             return {
                 ...state,
                 questions: quizQuestions,
@@ -40,7 +42,7 @@ const quizReducer = (state, action) => {
         };
 
         case "REORDER_QUESTIONS": {
-            const reorderedQuestions = questions.sort(() => {
+            const reorderedQuestions = state.questions.sort(() => {
                 return Math.random() - 0.5;
             });
             return {
