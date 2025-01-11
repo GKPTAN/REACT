@@ -1,2 +1,6 @@
 # REACT
  aulas práticas do curso de react
+
+* [movies_geek](https://movies-geek.vercel.app/)
+* [Portfólio feito com SASS](https://portfolio-sass-ten.vercel.app/)
+* [Quiz](https://quiz-eosin-theta.vercel.app/)
