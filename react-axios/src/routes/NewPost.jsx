@@ -9,7 +9,7 @@ const NewPost = () => {
     const [title, setTitle] = useState();
     const [body, setBody] = useState();
 
-    const createPost = async(e) => {
+    const createPost = async (e) => {
         e.preventDefault();
         const post = {title, body, userId: 1}
         await blogFetch.post("/posts", {

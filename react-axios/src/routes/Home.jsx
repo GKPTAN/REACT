@@ -7,7 +7,7 @@ const Home = () => {
 
     const [posts, setPosts] = useState([]);
 
-    const getPosts = async() => {
+    const getPosts = async () => {
         try {
             const response = await blogFetch.get("/posts");
             const data = response.data;
