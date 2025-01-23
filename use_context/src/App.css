@@ -1,0 +1,16 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #242424;
+  color: white;
+}
+
+.light-theme{
+  background-color: #ffffff;
+  color: #242424;
+}
