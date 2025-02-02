@@ -1,10 +1,19 @@
 import { useState, useEffect } from 'react';
 import MyComponent from './components/MyComponent';
 import AnotherComponent from './components/AnotherComponent';
+import UserProfile from './components/UserProfile';
+import LoginForm from './components/LoginForm';
+import Greeting from './components/Greeting';
+import UserBio from './components/UserBio';
+import UserData from './components/UserData';
 import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
+  const user = {
+    name: "Guilherme",
+    bio: "Desenvolvedor de Apps."
+  }
 
   // ERROS DE INICIANTE NO REACT
 
@@ -57,6 +66,18 @@ function App() {
         {/* <anotherComponent /> */}
         {/* 5 - SOLUÇÃO */}
         <AnotherComponent /> {/* usar o Pascal case quando escrever o nome dos componentes, sendo a primeira letra maiúscula em cada palavra */}
+        {/* 6 - não modularizar o código */}
+        <UserProfile />
+        {/* 7 - estrutura de pastas desorganizadas */}
+        {/* pastas: pages, hooks, utils, componentes de algum nicho */}
+        {/* 8 - falta de hooks personalizados em caso de reutilização */}
+        <LoginForm />
+        {/* 9 - erros não desestruturados */}
+        <Greeting name="joão"/>
+        {/* 10 - manipulação ineficiente de valores indefinidos */}
+        <UserBio user={user} />
+        {/* uso errado do useEffect */}
+        <UserData />
       </div>
     </>
   )
