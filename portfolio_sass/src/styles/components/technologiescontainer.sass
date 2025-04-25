@@ -16,6 +16,10 @@
             border: 1px solid #03c544
             width: 45%
             border-radius: variables.$card-border-radius
+            @media (max-width: 1024px)
+                width: 100%
+            @media (max-width: 768px)
+                width: 100%
 
             h3
                 color: variables.$text-color
@@ -23,6 +27,9 @@
 
             svg
                 font-size: 6rem
+
+            .technology-info
+                max-width: 350px
             
         #html
             svg
@@ -43,3 +50,45 @@
         #sass
             svg
                 color: #BF4080
+
+        #jquery
+            svg
+                color: #78CFF5
+        
+        #node
+            svg
+                color: #84C00B
+
+        #tailwind
+            svg
+                color: #00BCFF
+        
+        #mysql
+            svg
+                color: #065E8C
+
+        #postgresql
+            svg
+                background-color: #396C94
+                color: white
+        
+        #vitest
+            svg
+                color: #FFD62E
+        
+        #typescript
+            svg
+                color: #377CC8
+
+@media (max-width: 1440px)
+    .technology-info
+        width: 300px
+@media (max-width: 768px)
+    .technology-info
+        width: 350px
+@media (max-width: 425px)
+    .technology-info
+        width: 200px
+@media (max-width: 375px)
+    .technology-info
+        width: 150px

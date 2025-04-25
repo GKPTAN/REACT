@@ -15,7 +15,7 @@ const InformationContainer = () => {
             <AiOutlineMail id="email-icon" />
             <div>
                 <h3>E-mail</h3>
-                <p>santosamorim2001@gmail.com</p>
+                <p>alnath165@gmail.com</p>
             </div>
         </div>
         <div className="info-card">

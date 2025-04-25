@@ -6,6 +6,8 @@
     flex: 2 1 0
     border-radius: variables.$container-border-radius
     padding: 3rem
+    @media (max-width: 375px)
+        padding: 1rem
 
     section
         display: flex
@@ -18,6 +20,8 @@
         @include mixins.center()
         justify-content: start
         gap: 1rem
+        @media (max-width: 768px)
+            font-size: 1.5rem
 
         &::after
             @include mixins.gradient-border()
@@ -30,3 +34,7 @@
     .btn
         @include mixins.btn()
         align-self: start
+        &:hover
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            border: 1px solid #C3256A

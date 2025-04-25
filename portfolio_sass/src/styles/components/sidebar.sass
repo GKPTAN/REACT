@@ -24,6 +24,30 @@
         border-radius: variables.$card-border-radius
         margin-top: 12rem
         padding: .8rem 1.2rem
+        @media (max-width: 2560px)
+            margin-top: 20rem
+        @media (max-width: 1920px)
+            margin-top: 14rem
+        @media (max-width: 1440px)
+            margin-top: 8rem
+        @media (max-width: 1024px)
+            margin-top: 2rem 
 
     .btn 
         @include mixins.btn()
+        &:hover
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            border: 1px solid #C3256A
+
+@media (max-width: 768px)
+            #sidebar
+                padding: 3rem 1.754rem
+
+                .title
+                    margin-top: 16rem
+
+@media (max-width: 425px)
+    #sidebar
+        .title
+            margin-top: 6rem

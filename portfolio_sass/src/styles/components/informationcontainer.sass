@@ -10,6 +10,8 @@
     text-align: left
     width: 80%
     border-radius: variables.$card-border-radius
+    @media (max-width: 1440px)
+        width: 100%
 
     .info-card
         @include mixins.center()
@@ -34,6 +36,7 @@
             padding: .4rem
             width: 2rem
             height: 2rem
+            min-width: 1rem
             border-radius: variables.$card-border-radius
 
         #phone-icon
