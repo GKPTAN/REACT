@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { CountdownContext } from "../context/CountdownContext";
 import { Navigate } from "react-router-dom";
 import useCountdown from "../hooks/useCountdown";
@@ -41,14 +41,30 @@ const Countdown = () => {
 
   const textColor = getTextColor(eventColor);
 
+  useEffect(() => {
+    const counters = document.querySelectorAll(".counter");
+    const titles = document.querySelectorAll(".counter-text");
+
+    counters.forEach((counter, index) => {
+      const number = counter.querySelector(".counter-number");
+      const title = titles[index];
+
+      if (number && title) {
+        const numberWidth = number.offsetWidth;
+        title.style.width = `${numberWidth}px`;
+        title.style.textAlign = "center";
+      };
+    });
+  }, [day, hour, minute, second]);
+
   return (
     <>
       <Title title={eventTitle} eventColor={eventColor} />
       <div className="countdown-container">
-        <Counter title="Dias" number={day} eventColor={eventColor} textColor={textColor} />
-        <Counter title="Horas" number={hour} eventColor={eventColor} textColor={textColor} />
-        <Counter title="Minutos" number={minute} eventColor={eventColor} textColor={textColor} />
-        <Counter title="Segundos" number={second} eventColor={eventColor} textColor={textColor} />
+          <Counter number={day} eventColor={eventColor} textColor={textColor} title="Dias" />
+          <Counter number={hour} eventColor={eventColor} textColor={textColor} title="Horas" />
+          <Counter number={minute} eventColor={eventColor} textColor={textColor} title="Minutos" />
+          <Counter number={second} eventColor={eventColor} textColor={textColor} title="Segundos" />
       </div>
     </>
   );

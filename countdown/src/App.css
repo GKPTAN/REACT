@@ -20,3 +20,22 @@
   height: 200px;
   gap: 2rem;
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .countdown-container {
+    gap: 1rem;
+  }
+  .counter-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+  .counter-text {
+    font-size: 14px;
+  }
+}
