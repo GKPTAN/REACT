@@ -49,7 +49,7 @@ input, select{
   border-radius: 3px;
   width: 100%;
 }
-.complete{
+.incomplete{
   background-color: #5cb85c;
 }
 .remove{
@@ -83,4 +83,24 @@ input, select{
 }
 .filter-options div{
   flex: 1 1 0;
+}
+.options {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .incomplete > svg {
+    display: none;
+  }
+  .incomplete > svg#complete {
+    display: block;
+    font-size: 15px;
+  }
+  .complete > svg#undo {
+    display: block;
+    font-size: 15px;
+  }
+  .complete > svg {
+    display: none;
+  }
 }
