@@ -5,7 +5,7 @@ const SubmitButton = () => {
     const {pending} = useFormStatus();
 
   return (
-    <button type='submit' disabled={pending}>{pending ? "Enviando..." : "Enviar"}</button>
+    <button type='submit' style={pending ? {cursor: 'not-allowed'} : {cursor: 'pointer'}} disabled={pending}>{pending ? "Enviando..." : "Enviar"}</button>
   );
 };
 
