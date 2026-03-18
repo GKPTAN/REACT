@@ -1,50 +1,69 @@
-# React + TypeScript + Vite
+# Formulário de inscrição
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Esse projeto é um exemplo de formulário de inscrição para uma newsletter, criado com HTML e CSS. Ele inclui campos para o nome e email do usuário, além de um botão de envio.
 
-Currently, two official plugins are available:
+## Demonstração
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Imagem do Formulário de inscrição](./public/form.png)
+* [Veja o projeto online aqui](https://form-newsletter-five.vercel.app/)
 
-## Expanding the ESLint configuration
+## Estrutura do projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+REACT/
+└── form_newsletter/
+    ├── public/
+    │   └── vite.svg
+    ├── src/
+    │   ├── assets/
+    │   │   └── react.svg
+    │   ├── components/
+    │   │   └── Form.tsx
+    │   ├── types/
+    │   │   └── User.ts
+    │   ├── utils/
+    │   │   └── validate.ts
+    │   ├── App.css
+    │   ├── App.tsx
+    │   ├── index.css
+    │   ├── main.tsx
+    │   └── vite-env.d.ts
+    ├── .gitignore
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json
+    ├── package.json
+    ├── README.md
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tecnologias utilizadas
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- HTML
+- Tailwind CSS
+- TypeScript
+- React
+- Vite
+- Vercel
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Aprendizados
+
+- configurando o projeto com vite, typescript e react.
+- Aprendendo a usar o Tailwind CSS para estilizar o formulário de inscrição.
+- Formulário de inscrição responsivo e acessível.
+- Validação de formulário usando TypeScript e React.
+- gerenciamento de erros via state typescript e react.
+- interface para dados do form usando TypeScript.
+- layout responsivo usando Tailwind CSS.
+
+## Problemas e Bugs
+
+- Se tiver encontrado algum bug ou problema, sinta-se à vontade para abrir uma issue com os detalhes ou corrigir o problema.
+
+## Autor
+
+- Mentor: [Matheus Battisti - Hora de Codar](https://www.youtube.com/@MatheusBattisti)
+- Desenvolvedor: Guilherme Amorim

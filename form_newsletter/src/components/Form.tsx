@@ -30,7 +30,7 @@ const Form = () => {
   };
 
   return (
-    <form className="flex flex-col gap-3 py-[2rem]" onSubmit={handleSubmit}>
+    <form className="flex flex-col gap-3 py-8" onSubmit={handleSubmit}>
       <div className="flex flex-col">
         <label htmlFor="name" className="text-sm">
           Nome
