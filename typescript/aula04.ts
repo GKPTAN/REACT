@@ -1,7 +1,11 @@
 let nome: string;
 nome = "Guilherme";
-nome = "Amorim";
+nome = "joão";
 let valor: number;
 valor = 10.5;
 console.log(valor);
-console.log(nome)
+console.log(nome);
+
+let name2 = "Ana";
+name2 = name2 + 10;
+console.log(name2);

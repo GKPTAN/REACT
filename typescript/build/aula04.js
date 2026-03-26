@@ -1,8 +1,11 @@
 "use strict";
 let nome;
 nome = "Guilherme";
-nome = "Amorim";
+nome = "joão";
 let valor;
 valor = 10.5;
 console.log(valor);
 console.log(nome);
+let name2 = "Ana";
+name2 = name2 + 10;
+console.log(name2);
