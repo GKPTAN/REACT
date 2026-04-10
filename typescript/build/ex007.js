@@ -1,0 +1,12 @@
+"use strict";
+let tValor;
+tValor = "500";
+let sValor;
+sValor = tValor;
+let nValor;
+nValor = Number.parseInt(sValor);
+let forceNumber;
+forceNumber = sValor;
+nValor += 100;
+console.log("Tipo: ", typeof nValor);
+console.log("Valor: ", nValor);
